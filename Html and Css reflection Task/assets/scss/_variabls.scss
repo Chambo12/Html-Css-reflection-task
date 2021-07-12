@@ -1,0 +1,106 @@
+// Font Family
+$site-font:Poppins, sans-serif;
+
+
+$fonts_color:#333;
+$fonts_color2:#333645;
+
+$secondary_color: #50b0c9;
+
+$color_purple:#926fb1;
+$color_purple2:#bd1ebd;
+$color_purple3:#7e57a0;
+
+$color_blue:#4183d7;
+$color_blue2:#2a6ec6;
+$color_blue3:#0a58ca;
+$color_blue4:#0b5ed7;
+
+
+$color_red:#d64541;
+$color_red2:#bc2c28;
+$color_red3:#d24d57;
+
+$color_mate:#67809f;
+$color_mate2:#566c88;
+
+$color_green:#2ecc71;
+$color_green2:#25a25a;
+
+$color_pink:#f62459;
+$color_pink2:#de093f;
+
+$color_grey: #84858f;
+$color_grey2: #59595a;
+$color_grey3: #333645;
+$color_grey4: #ebebeb;
+$color_grey5: #e0e0e0;
+
+$color_darkblue: #333645;
+$color_darkblue2: #333645;
+$color_darkblue3: #22242e;
+$color_darkblue4: #191a22;
+
+$white: #ffffff;
+$black: #000000;
+
+// Light Color
+$light_grey: #f6f6f6;
+$light_grey2: #ddd;
+$light_grey3: #999aa2;
+$dark_grey:#7e808a;
+$dark_grey2:#59595a;
+
+// Body Color
+$body-color: #fff;
+
+$light-border: #cccccc;
+$light-border2: #484a58;
+$dark-border: #020202;
+
+// Responsive Variables
+$extraBig-device : 'only screen and (min-w idth: 1600px)';
+$laptop-device : 'only screen and (min-width: 1261px) and (max-width: 1600px)';
+$desktop-device : 'only screen and (min-width: 992px) and (max-width: 1260px)';
+$desktop-device2 : 'only screen and (min-width: 100px) and (max-width: 1199px)';
+$tablet-device: 'only screen and (min-width: 100px) and (max-width: 991px)';
+$large-mobile: 'only screen and (min-width: 100px) and (max-width: 768px)';
+$medium-mobile: 'only screen and (min-width: 100px) and (max-width: 640px)';
+$small-mobile: 'only screen and (min-width: 100px) and (max-width: 580px)';
+$small-mobile2: 'only screen and (min-width: 100px) and (max-width: 480px)';
+$small-mobile3: 'only screen and (min-width: 100px) and (max-width: 380px)';
+$small-mobile4: 'only screen and (min-width: 100px) and (max-width: 320px)';
+
+/* transition */
+@mixin transition($property){
+    -webkit-transition: $property;
+        transition: $property;
+}
+
+/* flex */
+@mixin flex($property){
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    flex-direction:$property;
+}
+
+/* transform */
+@mixin transform($property) {
+  -webkit-transform: $property;
+      -ms-transform: $property;
+          transform: $property;
+}
+
+/* opacity */
+@mixin opacity($opacity){
+    opacity: $opacity;
+    -ms-filter: $opacity;
+}
+
+@mixin buttonstyle($background, $fontsize, $color){
+    background-color:$background;
+    font-size: $fontsize;
+    color: $color;
+}
